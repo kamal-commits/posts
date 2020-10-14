@@ -24,7 +24,7 @@ const SinglePost = () => {
 					<Grid item md={2} />
 					<Grid item xs={12} md={8} style={{ marginTop: '7%' }}>
 						<PostCard title={post.title} body={post.body} postId={post.id} />
-						<PostAction />
+						<PostAction postId={post.id} />
 					</Grid>
 					<Grid item md={2} />
 				</Grid>
