@@ -34,10 +34,7 @@ export const getPostById = (id) => async (dispatch) => {
 
 export const likePost = (postId, like) => async (dispatch) => {
 	try {
-		const response = await Axios.put(
-			`https://jsonplaceholder.typicode.com/posts/${postId}`
-		)
-		console.log(response)
+		await Axios.put(`https://jsonplaceholder.typicode.com/posts/${postId}`)
 		dispatch({
 			type: 'LIKE_POST',
 			payload: like
@@ -49,10 +46,7 @@ export const likePost = (postId, like) => async (dispatch) => {
 
 export const dislikePost = (postId, dislike) => async (dispatch) => {
 	try {
-		const response = await Axios.put(
-			`https://jsonplaceholder.typicode.com/posts/${postId}`
-		)
-		console.log(response)
+		await Axios.put(`https://jsonplaceholder.typicode.com/posts/${postId}`)
 		dispatch({
 			type: 'DISLIKE_POST',
 			payload: dislike
