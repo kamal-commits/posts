@@ -28,14 +28,14 @@ const PostAction = ({ postId }) => {
 			marginBottom='10px'
 		>
 			<Box>
-				<IconButton color='inherit'>
-					<ThumbUpIcon onClick={countLikes} />
+				<IconButton onClick={countLikes} color='inherit'>
+					<ThumbUpIcon />
 				</IconButton>
 				{like > 0 ? like : null}
 			</Box>
 			<Box>
-				<IconButton color='inherit'>
-					<ThumbDownIcon onClick={countDislikes} />
+				<IconButton onClick={countDislikes} color='inherit'>
+					<ThumbDownIcon />
 				</IconButton>
 				{dislike > 0 ? dislike : null}
 			</Box>
