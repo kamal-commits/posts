@@ -11,7 +11,7 @@ import {
 const useStyles = makeStyles((theme) => ({
 	cardStyle: {
 		height: '300px',
-		backgroundColor: '#cc33ff',
+		backgroundColor: '#1287A5',
 		[theme.breakpoints.down('sm')]: {
 			height: '100%'
 		}
