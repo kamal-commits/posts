@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 	loadingStyle: {
 		marginLeft: '40%',
 		[theme.breakpoints.down('sm')]: {
-			marginLeft: '10%'
+			marginLeft: '15%'
 		}
 	}
 }))
