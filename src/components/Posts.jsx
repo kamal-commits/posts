@@ -6,15 +6,21 @@ import PostCard from './PostCard'
 import { Link } from 'react-router-dom'
 import PostAction from './PostAction'
 import Loading from './Loading'
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
 	typographyStyle: {
 		textAlign: 'center',
 		padding: '25px 0px',
 		fontFamily: 'Piedra',
 		fontSize: '40px',
 		textDecoration: 'underline'
+	},
+	loadingStyle: {
+		marginLeft: '40%',
+		[theme.breakpoints.down('sm')]: {
+			marginLeft: '10%'
+		}
 	}
-})
+}))
 
 const Posts = () => {
 	const [titleSearch, setTitleSearch] = useState('')
@@ -60,7 +66,7 @@ const Posts = () => {
 						</Grid>
 					))
 				) : (
-					<Box style={{ marginLeft: '40%' }}>
+					<Box className={classes.loadingStyle}>
 						<Loading />
 					</Box>
 				)}
